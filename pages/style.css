@@ -1,9 +1,13 @@
+body{
+    background-color: #252525;
+}
 .calculator {
-    border: 2px solid black;
+    border: 2px solid #121212;
     border-radius: 10px;
     width: 400px;
     height: 500px;
-    margin: 100px auto;
+    margin-top:50px;
+    margin-left: 450px;
     background-color: #121212;
 }
 
