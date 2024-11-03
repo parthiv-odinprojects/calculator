@@ -8,35 +8,36 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="result">
+        <div class="result" id="display">
             <!-- Display area -->
         </div>
         <div class="items">
-            <button class="button clear">C</button>
-            <button class="button delete">DEL</button>
-            <button class="button operator">%</button>
-            <button class="button operator">/</button>
+            <button class="button clear" onclick="clearr()">C</button>
+            <button class="button delete" onclick="deleteitem()">DEL</button>
+            <button class="button operator" onclick="appendtodisplay(this)">%</button>
+            <button class="button operator" onclick="appendtodisplay(this)">/</button>
             
 
-            <button class="button" id="7">7</button>
-            <button class="button" id="8">8</button>
-            <button class="button" id="9">9</button>
-            <button class="button operator" id="plus">+</button>
+            <button class="button" id="7" onclick="appendtodisplay(this)">7</button>
+            <button class="button" id="8" onclick="appendtodisplay(this)">8</button>
+            <button class="button" id="9" onclick="appendtodisplay(this)">9</button>
+            <button class="button operator" id="plus" onclick="appendtodisplay(this)">+</button>
 
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button operator">-</button>
+            <button class="button" onclick="appendtodisplay(this)">4</button>
+            <button class="button" onclick="appendtodisplay(this)">5</button>
+            <button class="button" onclick="appendtodisplay(this)">6</button>
+            <button class="button operator" onclick="appendtodisplay(this)">-</button>
 
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button operator">X</button>
+            <button class="button" onclick="appendtodisplay(this)">1</button>
+            <button class="button" onclick="appendtodisplay(this)">2</button>
+            <button class="button" onclick="appendtodisplay(this)">3</button>
+            <button class="button operator" onclick="appendtodisplay(this)">*</button>
 
-            <button class="button zero">0</button>
-            <button class="button">.</button>
-            <button class="button equals">=</button>
+            <button class="button zero" onclick="appendtodisplay(this)">0</button>
+            <button class="button" onclick="appendtodisplay(this)">.</button>
+            <button class="button equals" onclick="calculatee()">=</button>
         </div>
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
